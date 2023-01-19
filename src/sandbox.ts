@@ -22,3 +22,5 @@ fighter = {
 }
 
 console.log(fighter)
+
+console.log('testing tsconfig.json and global tsc -w watch.')
