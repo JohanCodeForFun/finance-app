@@ -1,38 +1,43 @@
-const character = 'Luigi';
-console.log(character);
+// explicit types
+let character: string;
+let character2: string = 'Mario';
+// let character3: string = 9000;
 
-let number = 30;
-let isBlackbelt = false;
+let age: number = 12;
+// let age2: number = '12';
 
-// number = "not a number"
-// character = 'Charlie'
-// number = 33;
-
-// isBlackbelt = 'yes'
-// isBlackbelt = true
-
-const circ = (diameter: number) => {
-	return diameter * Math.PI;
-};
-
-// console.log(circ('hello'));
-console.log(circ(14));
+let isLoggedIn: boolean;
+isLoggedIn = true;
+// isLoggedIn = 54;
 
 
-// arrays
-let numbers = [1, 1, 2, 3, 5, 8, 13];
-numbers.push(21);
-// numbers.push('gfhf');
-numbers[0] = 1;
-// numbers[0] = 'hello';
+let ninjas: string[];
+// ninjas.push('grodan boll')
+// error thrown because the array with explicit types
+// of strings, is not initialized.
+
+let turtles: string[] = [];
+// with the extra '= []' after string[], 
+// the array is now initalized as an empty array
+// ready to work with array methods such as .push()
+
+
+let mixed: (number|string)[] = [];
+// using (type|type|type) lets me define what type of
+// data will be accepted in this mixed array.
+mixed.push(12);
+mixed.push('hello');
+// mixed.push(false);
 
 // objects
-const johan = {
-	age: 38,
-	skills: ['JavaScript', 'TypeScript', 'Vue', 'Coach'],
-	location: 'Stocholm'
+let ninjaOne: object;
+ninjaOne = {name: 'charlie', age: 90}
+
+let ninjaTwo: {
+	name: string,
+	age: number,
+	beltColor: string
 }
 
-johan.age = 22
-// johan.skills = 'fishing'
-
+ninjaTwo = {name: 'Johan', age: 24, beltColor: 'purple'}
+console.log(ninjaTwo)
