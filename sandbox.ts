@@ -1,43 +1,24 @@
-// explicit types
-let character: string;
-let character2: string = 'Mario';
-// let character3: string = 9000;
+// dynamic (any) types
 
-let age: number = 12;
-// let age2: number = '12';
+let age: any = 25;
 
-let isLoggedIn: boolean;
-isLoggedIn = true;
-// isLoggedIn = 54;
+age = true;
+age = 'hello';
 
+let mixed: any[] = [];
 
-let ninjas: string[];
-// ninjas.push('grodan boll')
-// error thrown because the array with explicit types
-// of strings, is not initialized.
-
-let turtles: string[] = [];
-// with the extra '= []' after string[], 
-// the array is now initalized as an empty array
-// ready to work with array methods such as .push()
-
-
-let mixed: (number|string)[] = [];
-// using (type|type|type) lets me define what type of
-// data will be accepted in this mixed array.
-mixed.push(12);
-mixed.push('hello');
-// mixed.push(false);
-
-// objects
-let ninjaOne: object;
-ninjaOne = {name: 'charlie', age: 90}
-
-let ninjaTwo: {
+let fighter: {
 	name: string,
 	age: number,
-	beltColor: string
+	beltColor: string,
+	winRecord: {},
 }
 
-ninjaTwo = {name: 'Johan', age: 24, beltColor: 'purple'}
-console.log(ninjaTwo)
+fighter = {
+	name: 'Johan',
+	age: 38,
+	beltColor: 'bjj purplebelt',
+	winRecord: {wins: 32, losses: 2}
+}
+
+console.log(fighter)
