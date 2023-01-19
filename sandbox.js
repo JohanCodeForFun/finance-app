@@ -10,5 +10,9 @@ var isBlackbelt = false;
 var circ = function (diameter) {
     return diameter * Math.PI;
 };
-console.log(circ('hello'));
+// console.log(circ('hello'));
 console.log(circ(14));
+// arrays
+var numbers = [1, 1, 2, 3, 5, 8, 13];
+numbers.push(21);
+numbers.push('gfhf');

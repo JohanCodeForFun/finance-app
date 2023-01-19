@@ -22,9 +22,9 @@ console.log(circ(14));
 // arrays
 let numbers = [1, 1, 2, 3, 5, 8, 13];
 numbers.push(21);
-numbers.push('gfhf');
+// numbers.push('gfhf');
 numbers[0] = 1;
-numbers[0] = 'hello';
+// numbers[0] = 'hello';
 
 // objects
 const johan = {
@@ -34,5 +34,5 @@ const johan = {
 }
 
 johan.age = 22
-johan.skills = 'fishing'
+// johan.skills = 'fishing'
 
