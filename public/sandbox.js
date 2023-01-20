@@ -12,4 +12,15 @@ fighter = {
     winRecord: { wins: 32, losses: 2 }
 };
 console.log(fighter);
-console.log('testing tsconfig.json and global tsc -w watch.');
+const logDetails1 = (uid, item) => {
+    console.log(`${item} has a uid of ${uid}`);
+};
+const logDetails2 = (uid, item) => {
+    console.log(`${item} has a uid of ${uid}`);
+};
+const greet1 = (user) => {
+    console.log(`${user.name} says hello`);
+};
+const greet2 = (user) => {
+    console.log(`${user.name} says hello`);
+};
